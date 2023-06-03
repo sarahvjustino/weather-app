@@ -1,0 +1,33 @@
+@use "utilities";
+@use "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@include utilities.reset;
+
+body {
+  height: 100vh;
+  background-color: variables.$primary-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 70%;
+  background-color: variables.$secondary-color;
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+
+  .search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 3rem;
+
+    & input {
+      background-color: variables.$input-color;
+      border: none;
+      color: variables.$primary-color;
+    }
+  }
+}
