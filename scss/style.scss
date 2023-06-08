@@ -18,16 +18,40 @@ body {
   background-color: variables.$secondary-color;
   padding: 2rem 3rem;
   border-radius: 1.2rem;
+  max-width: 36rem;
 
   .search-container {
     display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 3rem;
+    grid-template-columns: 11fr 3fr;
+    gap: 2rem;
 
     & input {
+      background-color: variables.$secondary-color;
+      border: none;
+      border-bottom: 2px solid #fff;
+      color: variables.$primary-text-color;
+      padding: 1rem;
+      outline-color: variables.$secondary-color;
+
+      &::placeholder {
+        color: variables.$tertiary-text-color;
+      }
+    }
+
+    & button {
       background-color: variables.$input-color;
       border: none;
-      color: variables.$primary-color;
+      cursor: pointer;
+      color: variables.$tertiary-text-color;
+      border-radius: 0.4rem;
+      padding: 1rem 2.5rem;
+      transition: 0.5s;
+
+      &:hover {
+        color: #fff;
+        background-color: variables.$tertiary-color;
+        transform: scale(1.05);
+      }
     }
   }
 }
