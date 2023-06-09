@@ -16,7 +16,8 @@ Você pode visualizar projeto completo através [DESSE LINK](https://sarahvjusti
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML  
+- SASS
 - JavaScript
 - Git e Github
 
