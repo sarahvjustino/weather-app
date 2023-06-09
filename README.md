@@ -17,10 +17,10 @@ Você pode visualizar projeto completo através [DESSE LINK](https://sarahvjusti
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML  
-- SASS
+- SCSS
 - JavaScript
 - Git e Github
 
 ## 💻 Projeto
 
-Projeto consumindo uma API para pesquisar o clima nas cidades do mundo.
+O projeto é uma aplicação que permite aos usuários obter informações meteorológicas em tempo real. A aplicação consome a API OpenWeatherMap para fornecer dados precisos e atualizados sobre as condições climáticas de uma determinada localização.
