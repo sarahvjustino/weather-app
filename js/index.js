@@ -11,10 +11,10 @@ function getWeather() {
 
     if (inputValue.length === 0) {
         result.innerHTML = `<h3 class="msg">Please enter a city name</h3>`;
-
     } else {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${key}`
         fetch(url).then((data) => data.json()).then((data) => {
+            input.value = "";
             console.log(data);
             console.log(data.name);
             console.log(data.weather[0].description);
