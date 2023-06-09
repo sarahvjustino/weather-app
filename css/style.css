@@ -32,7 +32,9 @@ body {
 .container .search-container {
   display: grid;
   grid-template-columns: 11fr 3fr;
+  justify-content: center;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .container .search-container input {
   background-color: #d1e9f3;
@@ -41,8 +43,10 @@ body {
   color: #333333;
   padding: 1rem;
   outline-color: #d1e9f3;
+  font-weight: 600;
 }
 .container .search-container input::placeholder {
+  font-weight: 600;
   color: #999999;
 }
 .container .search-container button {
@@ -53,11 +57,56 @@ body {
   border-radius: 0.4rem;
   padding: 1rem 2.5rem;
   transition: 0.5s;
+  font-weight: 600;
 }
 .container .search-container button:hover {
   color: #fff;
   background-color: #b3d8e9;
   transform: scale(1.05);
+}
+.container #result {
+  text-align: center;
+}
+.container #result h2 {
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+.container #result h4 {
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 0.5rem;
+}
+.container #result img {
+  width: 6.2rem;
+  margin: 0.6rem 0 0 0;
+  margin: 2rem 0;
+}
+.container #result h1 {
+  color: #555555;
+  font-weight: 600;
+}
+.container #result .weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.container #result .weather-container div {
+  padding: 1rem;
+}
+.container #result .weather-container div:first-child {
+  border-right: 2px solid #fff;
+}
+.container #result .weather-container h4 {
+  color: #333333;
+}
+.container #result .msg {
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
